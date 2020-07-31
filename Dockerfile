@@ -23,7 +23,7 @@ RUN apt-get update
 RUN apt-get install --yes software-properties-common build-essential libssl-dev
 RUN apt-get install --yes mysql-community-client libmysqlclient-dev
 RUN apt-get install --yes curl wget xvfb unzip imagemagick libmagickwand-dev
-RUN curl --silent --location https://deb.nodesource.com/setup_10.x | bash -
+RUN curl --silent --location https://deb.nodesource.com/setup_12.x | bash -
 RUN apt-get install --yes nodejs
 RUN apt-get install --yes libxss1 libappindicator1 libindicator7
 RUN wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | apt-key add -
